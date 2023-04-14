@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog
+    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <include file="db/changelog/202211281019-users_create_table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/202211281024-roles-create_table.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/202212011041-roles-alter_sequence-update_start_value.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/202212011041-users-alter_sequence-update_start_value.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/202303151155-users_roles-create_table.xml" relativeToChangelogFile="false"/>
+
+    <include file="db/import/202212011036_roles_data.xml" relativeToChangelogFile="false"/>
+    <include file="db/import/202212011037_user_data.xml" relativeToChangelogFile="false"/>
+    <include file="db/import/202301190108_user_role_data.xml" relativeToChangelogFile="false"/>
+</databaseChangeLog>

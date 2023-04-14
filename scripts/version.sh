@@ -1,0 +1,1 @@
+sed -n 's,.*<version>\(.*\)</version>.*,\1,p' ./pom.xml | head -1
